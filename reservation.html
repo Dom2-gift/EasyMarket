@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="tableau_de_bord.js"></script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +21,7 @@
     </header>
  </body>
  <main>
-    <form action="" method="get">
+    <form action="post" method="get">
         <h2>Réservation d'article</h2>
         <label for="nom">Nom complet:</label>
         <input type="text" id="nom" name="name" required>
@@ -31,11 +32,14 @@
         <label for="produit">Produit à réserver:</label>
         <input type="text" id="produit" name="produit" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <label for="message">Message:</label>
+        <label for="quantité">Quantité demandée:</label>
+        <textarea type="text" id="quantite" name="quantite" required></textarea>
         
-        <textarea id="message" name="message" required></textarea>
+        <label for="date">Date de retrait:</label>
+        <textarea type="date" id="date" name="date" required></textarea>
+
+        <label for="message">Remarques:</label>
+        <textarea id="message" name="message" ></textarea>
         <button type="submit">Envoyer la réservation</button>
     </form>
  </main>   

@@ -1,7 +1,5 @@
-
-        // Exemple de messages reçus (à remplacer par vos données réelles)
-        const messages = [
-            { nom: "Jean Dupont", email: "jean@example.com", message: "Bonjour, je souhaite réserver.", date: "2025-07-31" },
+const messages = [
+            { Nom, email: "jean@example.com", message: "Bonjour, je souhaite réserver.", date: "2025-07-31" },
             { nom: "Marie Curie", email: "marie@example.com", message: "Avez-vous des disponibilités ?", date: "2025-07-30" }
         ];
 
@@ -9,10 +7,20 @@
         messages.forEach(msg => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td>${msg.nom}</td>
+                <td>${msg.Nom}</td>
                 <td>${msg.email}</td>
                 <td>${msg.message}</td>
                 <td>${msg.date}</td>
             `;
             tbody.appendChild(tr);
         });
+
+
+const Nom = document.getElementById("nom")
+const Numero = document.getElementById("numero")
+const Produit = document.getElementById("produit")
+const Quantite = document.getElementById("quantite")
+const Date = document.getElementById("date")
+const Remarque = document.getElementById("message")
+
+
