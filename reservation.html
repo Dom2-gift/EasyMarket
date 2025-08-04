@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="tableau_de_bord.js"></script>
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">Easy <br>Market</h1>
-            <div class="container">
-                <button class="btn"></button>
-                <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tableau_de_bord.html">Tableau de bord</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
- </body>
- <main>
-    <form action="post" method="get">
-        <h2>Réservation d'article</h2>
-        <label for="nom">Nom complet:</label>
-        <input type="text" id="nom" name="name" required>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reservation.css">
+        <script src="js/reservation.js"></script>
+    </head>
 
-        <label for="numero">Numéro whatsapp:</label>
-        <input type="tel" id="numero" name="phone" required>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="logo">
+                    <a href="#">
+                        <span class="logo-easy">EASY</span>
+                        <span class="logo-market">MARKET</span>
+                    </a>
+                </h1>
 
-        <label for="produit">Produit à réserver:</label>
-        <input type="text" id="produit" name="produit" required>
+                <div class="menu-toggle-container">
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                        <img src="images/menu-hamburger_b.png" alt="Icone de menu" class="menu-icon">
+                    </button>
+                    <div class="menu-toggle-links">
+                        <a href="index.html" class="toggle-item">Accueil</a>
+                        <a href="tableau_de_bord.html" class="toggle-item">Tableau de bord</a>
 
-        <label for="quantité">Quantité demandée:</label>
-        <textarea type="text" id="quantite" name="quantite" required></textarea>
-        
-        <label for="date">Date de retrait:</label>
-        <textarea type="date" id="date" name="date" required></textarea>
+                        <button class="btn_reservez menu-toggle_btn_reservez" id="btn_reservez">
+                            <a href="reservation.html">Réservez un article</a>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        <label for="message">Remarques:</label>
-        <textarea id="message" name="message" ></textarea>
-        <button type="submit">Envoyer la réservation</button>
-    </form>
- </main>   
+        <main>
+            <form action="post" method="get">
+                <h2>Réservation d'article</h2>
+                <label for="nom">Nom complet:</label>
+                <input type="text" id="nom" name="name" required>
+
+                <label for="numero">Numéro whatsapp:</label>
+                <input type="tel" id="numero" name="phone" required>
+
+                <label for="produit">Produit à réserver:</label>
+                <input type="text" id="produit" name="produit" required>
+
+                <label for="quantité">Quantité demandée:</label>
+                <textarea type="text" id="quantite" name="quantite" required></textarea>
+                
+                <label for="date">Date de retrait:</label>
+                <textarea type="date" id="date" name="date" required></textarea>
+
+                <label for="message">Remarques:</label>
+                <textarea id="message" name="message" ></textarea>
+                <button type="submit">Envoyer la réservation</button>
+            </form>
+        </main>   
+
+        <footer class="footer">
+            <p>&copy; 2023 EasyMarket. All rights reserved.</p>
+        </footer>
+    </body>
 </html>

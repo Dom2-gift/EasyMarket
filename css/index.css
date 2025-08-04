@@ -1,0 +1,12 @@
+/* Main */
+.presentation {
+    padding-bottom: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.info {
+    line-height: 1.5;
+}
