@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; /* centre le tableau */
+    table-layout: fixed; /* colonnes largeur égale */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    width: 1%; /* force la largeur égale avec table-layout: fixed */
+    word-break: break-word;
+}
+
+caption {
+    font-sise: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
