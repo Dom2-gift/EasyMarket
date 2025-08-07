@@ -51,9 +51,13 @@
                     </fieldset>
                     <fieldset class="mes_reservations">
                         <legend>Mes réservations</legend>
-                        <img src="images/ajouter.png" alt="Icone de ajouter un produit/article" class="ajouter_produit">
-                        <input type="text" name="article" id="article" placeholder="Produit/Article">
-                        <input type="text" name="quantite" id="quantite" placeholder="Quantité">
+                        <img src="images/ajouter.png" alt="Icone de ajouter un produit/article" class="ajouter_produit" id="ajouter_produit">
+                        <div id="articles-container">
+                            <div class="article-group">
+                                <input type="text" name="article[]" placeholder="Produit/Article">
+                                <input type="text" name="quantite[]" placeholder="Quantité">
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Boutique</legend>
