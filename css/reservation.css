@@ -3,15 +3,23 @@
     bottom: 1.5rem;
 }
 
-.mon_identite, 
-.mes_reservations {
+.mon_identite {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+.article-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 .ajouter_produit {
-    display: inline-block;
+    display: flex;
+    position: absolute;
     width: 25px;
 }
 
