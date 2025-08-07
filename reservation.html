@@ -26,7 +26,7 @@
                         <a href="tableau_de_bord.html" class="toggle-item barre_separatrice">Tableau de bord</a>
 
                         <button class="btn_reservez menu-toggle_btn_reservez" id="btn_reservez">
-                            <a href="reservation.html">Réservez un article</a>
+                            <a href="reservation.html">Réservez un produit</a>
                         </button>
 
                         <button class="btn_connexion" id="btn_connexion">
@@ -51,10 +51,10 @@
                     </fieldset>
                     <fieldset class="mes_reservations">
                         <legend>Mes réservations</legend>
-                        <img src="images/ajouter.png" alt="Icone de ajouter un produit/article" class="ajouter_produit" id="ajouter_produit">
-                        <div id="articles-container">
-                            <div class="article-group">
-                                <input type="text" name="article[]" placeholder="Produit/Article">
+                        <img src="images/ajouter.png" alt="Icone de ajouter un produit" class="ajouter_produit" id="ajouter_produit">
+                        <div id="produit-container">
+                            <div class="produit-group">
+                                <input type="text" name="produit[]" placeholder="Produit">
                                 <input type="text" name="quantite[]" placeholder="Quantité">
                             </div>
                         </div>
@@ -78,18 +78,5 @@
         
         <script src="js/script.js"></script>
         <script src="js/reservation.js"></script>
-        <script>
-        // Ajout dynamique d'un groupe article/quantité
-        document.getElementById('ajouter_produit').addEventListener('click', function() {
-            const container = document.getElementById('articles-container');
-            const group = document.createElement('div');
-            group.className = 'article-group';
-            group.innerHTML = `
-                <input type="text" name="article[]" placeholder="Produit/Article">
-                <input type="text" name="quantite[]" placeholder="Quantité">
-            `;
-            container.appendChild(group);
-        });
-        </script>
     </body>
 </html>

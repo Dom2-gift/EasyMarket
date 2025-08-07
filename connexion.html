@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EasyMarket</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/connexion.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo_b.png" alt="Logo EasyMarket" class="img_logo">
+                    </a>
+                </h1>
+
+                <div class="menu-toggle-container">
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                        <img src="images/menu-hamburger_b.png" alt="Icone de menu" class="menu-icon">
+                    </button>
+                    <div class="menu-toggle-links">
+                        <a href="index.html" class="toggle-item">Accueil</a>
+                        <a href="tableau_de_bord.html" class="toggle-item barre_separatrice">Tableau de bord</a>
+
+                        <button class="btn_reservez menu-toggle_btn_reservez" id="btn_reservez">
+                            <a href="reservation.html">Réservez un produit</a>
+                        </button>
+
+                        <button class="btn_connexion" id="btn_connexion">
+                            <a href="connexion.html" class="connexion">Connexion</a>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="connexion_section">
+                <h2>Connexion</h2>
+                <form method="post" action="" class="connexion_form">
+                    <input type="tel/email" name="tel_email" id="tel_email" placeholder="Numéro mobile ou Email" required>
+                    <input type="password" name="password" id="password" placeholder="Mot de passe" required>
+                    <button type="submit" class="btn_connexion_submit">Se connecter</button>
+                    <a href="mot_de_passe_oublie.html" class="mot_de_passe_oublie">Mot de passe oublié</a>
+                    <button class="btn_creation_compte">
+                        <a href="creation_du_compte.html" class="creation_compte">Créer un compte</a>
+                    </button>
+                </form>
+                
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2023 EasyMarket. All rights reserved.</p>
+        </footer>
+        
+        <script src="js/script.js"></script>
+        <script src="js/connexion.js"></script>
+    </body>
+</html> 

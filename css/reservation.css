@@ -1,3 +1,4 @@
+/* Reservation CSS */
 .reservation {
     position: relative;
     bottom: 1.5rem;
@@ -9,7 +10,7 @@
     gap: 1rem;
 }
 
-.article-group {
+.produit-group {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -20,7 +21,7 @@
 .ajouter_produit {
     display: flex;
     position: absolute;
-    top: 97.8px;
+    top: 96.7px;
     width: 25px;
 }
 
@@ -29,8 +30,9 @@
     width: 100%;
     background-color: rgba(25, 36, 255, 0.950);
     color: white;
-    margin: 1rem 0;
-    padding: 0.5rem 2.5rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    justify-content: center;
     border: none;
     border-radius: 8px;
     cursor: pointer;

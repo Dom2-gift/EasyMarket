@@ -1,0 +1,71 @@
+.connexion_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .connexion_section h2 {
+    text-align: center;
+ }
+
+.connexion_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+ }
+
+ .connexion_form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+ }
+
+ .btn_connexion_submit {
+    padding: 0.5rem;
+    background-color: rgba(25, 36, 255, 0.950);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+
+.btn_connexion_submit:hover {
+    background-color: rgb(25, 36, 255);
+}
+
+.mot_de_passe_oublie {
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+    bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.mot_de_passe_oublie:hover {
+    color: var(--accent-color);
+}
+
+.btn_creation_compte {
+    background-color: transparent;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 1rem;
+    border: 2px solid rgba(25, 36, 255, 0.950);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+.btn_creation_compte:hover {
+    border: 2px solid rgb(25, 36, 255);
+ }
+
+.btn_creation_compte .creation_compte {
+    color: var(--text-color);
+    text-decoration: none;
+ }

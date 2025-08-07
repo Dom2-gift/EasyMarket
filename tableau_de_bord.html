@@ -26,7 +26,7 @@
                         <a href="tableau_de_bord.html" class="toggle-item barre_separatrice">Tableau de bord</a>
 
                         <button class="btn_reservez menu-toggle_btn_reservez" id="btn_reservez">
-                            <a href="reservation.html">Réservez un article</a>
+                            <a href="reservation.html">Réservez un produit</a>
                         </button>
 
                         <button class="btn_connexion" id="btn_connexion">
@@ -45,20 +45,38 @@
             <section class="suivi_reservation">
                 <article class="reserved_items">
                     <table>
-                        <caption>Réservations du jour/Date</caption>
+                        <caption>Réservations du jour</caption>
                         <thead>
                             <tr>
+                                <th>Date</th>
                                 <th>Client</th>
-                                <th>Article/Produit</th>
+                                <th>Produit</th>
                                 <th>Prix Total</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
+                        <tbody id="reserved_items_body">
+                            <!-- Les lignes de réservation seront insérées ici dynamiquement -->
+                        </tbody>
                     </table>
                 </article>
 
                 <article class="history_reservation">
-
+                    <table>
+                        <caption>Historique des réservations</caption>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Client</th>
+                                <th>Produit</th>
+                                <th>Prix Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history_reservation_body">
+                            <!-- Les lignes d'historique de réservation seront insérées ici dynamiquement -->
+                        </tbody>
+                    </table>
                 </article>
             </section>
 
@@ -72,6 +90,9 @@
                             <th>Commission</th>
                         </tr>
                     </thead>
+                    <tbody id="commission_body">
+                        <!-- Les lignes de commission seront insérées ici dynamiquement -->
+                    </tbody>
                 </table>
             </section>
         </main>
