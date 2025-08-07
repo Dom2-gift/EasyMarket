@@ -12,9 +12,8 @@
         <header class="header">
             <nav class="navbar">
                 <h1 class="logo">
-                    <a href="#">
-                        <span class="logo-easy">EASY</span>
-                        <span class="logo-market">MARKET</span>
+                    <a href="index.html">
+                        <img src="images/logo_b.png" alt="Logo EasyMarket" class="img_logo">
                     </a>
                 </h1>
 
@@ -24,10 +23,14 @@
                     </button>
                     <div class="menu-toggle-links">
                         <a href="index.html" class="toggle-item">Accueil</a>
-                        <a href="tableau_de_bord.html" class="toggle-item">Tableau de bord</a>
+                        <a href="tableau_de_bord.html" class="toggle-item barre_separatrice">Tableau de bord</a>
 
                         <button class="btn_reservez menu-toggle_btn_reservez" id="btn_reservez">
                             <a href="reservation.html">Réservez un article</a>
+                        </button>
+
+                        <button class="btn_connexion" id="btn_connexion">
+                            <a href="connexion.html" class="connexion">Connexion</a>
                         </button>
                     </div>
                 </div>
@@ -35,7 +38,36 @@
         </header>
 
         <main>
-            <form action="post" method="get">
+            <section class="titre">
+                <h2>Réservation</h2>
+            </section>
+
+            <section class="reservation">
+                <form method="get" action="">
+                    <fieldset class="mon_identite">
+                        <legend>Mon identité</legend>
+                        <input type="text" name="nom" id="nom" placeholder="Nom complet" required>
+                        <input type="tel" name="num_tel" id="num_tel" placeholder="Numéro de téléphone" required>
+                    </fieldset>
+                    <fieldset class="mes_reservations">
+                        <legend>Mes réservations</legend>
+                        <img src="images/ajouter.png" alt="Icone de ajouter un produit/article" class="ajouter_produit">
+                        <input type="text" name="article" id="article" placeholder="Produit/Article">
+                        <input type="text" name="quantite" id="quantite" placeholder="Quantité">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Boutique</legend>
+                        <select name="boutique" id="boutique">
+                            <option value="boutique_une" selected>Boutique Une</option>
+                            <option value="boutique_deux">Boutique Deux</option>
+                            <option value="boutique_n">Boutique Trois</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" value="Envoyer" class="btn_submit">
+                </form> 
+            </section>
+
+            <!-- <form action="post" method="get">
                 <h2>Réservation d'article</h2>
                 <label for="nom">Nom complet:</label>
                 <input type="text" id="nom" name="name" required>
@@ -55,7 +87,7 @@
                 <label for="message">Remarques:</label>
                 <textarea id="message" name="message" ></textarea>
                 <button type="submit">Envoyer la réservation</button>
-            </form>
+            </form> -->
         </main>   
 
         <footer class="footer">

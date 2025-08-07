@@ -128,11 +128,18 @@ body > * {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    padding: 0.5rem 16px;
+    padding: 0.3rem 16px;
     color: var(--text-color);
     text-decoration: none;
     transition: background-color 0.2s ease;;
+}
+
+.barre_separatrice {
+    width: 125px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .toggle-item:first-child {
@@ -169,7 +176,7 @@ body > * {
 
 /* Bouton de réservation */
 .btn_reservez {
-    background-color: rgba(25, 36, 255, 0.838);
+    background-color: rgba(25, 36, 255, 0.950);
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 8px;
@@ -187,7 +194,27 @@ body > * {
 }
 
 .menu-toggle_btn_reservez {
-    margin: 0.8rem 0 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.btn_connexion {
+    background-color: transparent;
+    margin: 0.5rem 0;
+    padding: 0.5rem 2.5rem;
+    border: 2px solid rgba(25, 36, 255, 0.950);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn_connexion:hover {
+    background-color: rgba(205, 212, 254, 0.78);
+    border: 2px solid rgb(25, 36, 255);
+}
+
+.btn_connexion a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 /* Main */
