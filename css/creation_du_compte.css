@@ -1,0 +1,45 @@
+.creation_du_compte_section {
+    padding: 20px;
+}
+
+.creation_du_compte_section h3 {
+    text-align: center;
+}
+
+.creation_du_compte_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+.creation_du_compte_form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn_creation_compte_submit {
+    padding: 0.5rem;
+    background-color: rgba(25, 36, 255, 0.950);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_creation_compte_submit:hover {
+    background-color: rgb(25, 36, 255);
+}
+
+.deja_inscrit {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.deja_inscrit:hover {
+    text-decoration: underline;
+}

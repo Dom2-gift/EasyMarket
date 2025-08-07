@@ -1,0 +1,35 @@
+.mot_de_passe_oublie_section {
+    padding: 20px;
+}
+
+.mot_de_passe_oublie_section h3 {
+    text-align: center;
+}
+
+.mot_de_passe_oublie_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+.mot_de_passe_oublie_form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn_envoyer {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(25, 36, 255, 0.950);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_envoyer:hover {
+    background-color: rgb(25, 36, 255);
+}

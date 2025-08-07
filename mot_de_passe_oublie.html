@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EasyMarket</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/creation_du_compte.css">
+        <link rel="stylesheet" href="css/mot_de_passe_oublie.css">
     </head>
 
     <body>
@@ -38,8 +38,13 @@
         </header>
 
         <main class="main">
-            <section>
-                
+            <section class="mot_de_passe_oublie_section">
+                <h3>Réinitialisation du mot de passe</h3>
+                <form method="post" action="" class="mot_de_passe_oublie_form">
+                    <input type="tel/email" name="tel_email" id="tel_email" placeholder="Numéro mobile ou Email" required>
+                    <input type="number" name="code_verification" id="code_verification" placeholder="Code de vérification" required>
+                    <button type="submit" class="btn_envoyer">Envoyer</button>
+                </form>
             </section>
         </main>
 
