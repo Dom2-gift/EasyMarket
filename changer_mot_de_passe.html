@@ -1,11 +1,11 @@
 <!DOCTYPE html>
- <html lang="fr">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EasyMarket</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/connexion.css">
+        <link rel="stylesheet" href="css/changer_mot_de_passe.css">
     </head>
 
     <body>
@@ -38,20 +38,15 @@
         </header>
 
         <main class="main">
-            <section class="connexion_section">
-                <h2>Connexion</h2>
-                <form method="post" action="" class="connexion_form">
-                    <input type="tel/email" name="tel_email" id="tel_email" placeholder="Numéro mobile ou Email" required>
-                    <input type="password" name="password" id="password" placeholder="Mot de passe" required>
-                    <button type="submit" class="btn_connexion_submit">Se connecter</button>
-                    
-                    <a href="mot_de_passe_oublie.html" class="mot_de_passe_oublie">Mot de passe oublié</a>
+            <section class="mot_de_passe_oublie_section">
+                <h3>Réinitialisation du mot de passe</h3>
+                <form method="post" action="" class="mot_de_passe_oublie_form">
+                    <input type="text" name="nouveau_mot_de_passe" id="nouveau_mot_de_passe" placeholder="Nouveau mot de passe" required>
+                    <input type="text" name="confirmer_mot_de_passe" id="confirmer_mot_de_passe" placeholder="Confirmer le mot de passe" required>
+                    <button type="submit" class="btn_envoyer">
+                        <a href="connexion.html">Envoyer</a>
+                    </button>
                 </form>
-
-                <button class="btn_creation_compte">
-                    <a href="creation_du_compte.html" class="creation_compte">Créer un compte</a>
-                </button>
-                
             </section>
         </main>
 
@@ -60,6 +55,6 @@
         </footer>
         
         <script src="js/script.js"></script>
-        <script src="js/connexion.js"></script>
+        <script src="js/mot_de_passe_oublie.js"></script>
     </body>
 </html> 
