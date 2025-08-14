@@ -175,8 +175,13 @@ body > * {
 }
 
 /* Bouton de réservation */
+.reservation {
+    text-decoration: none;
+}
+
 .btn_reservez {
     background-color: rgba(25, 36, 255, 0.950);
+    color: white;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 8px;
@@ -188,17 +193,18 @@ body > * {
     background-color: rgb(25, 36, 255);
 }
 
-.btn_reservez a {
-    color: white;
-    text-decoration: none;
-}
-
 .menu-toggle_btn_reservez {
     margin: 0.5rem 0;
 }
 
+/* Bouton de connexion */
+.connexion {
+    text-decoration: none;
+}
+
 .btn_connexion {
     background-color: transparent;
+    color: var(--text-color);
     margin: 0.5rem 0;
     padding: 0.5rem 2.5rem;
     border: 2px solid rgba(25, 36, 255, 0.950);
@@ -212,16 +218,20 @@ body > * {
     border: 2px solid rgb(25, 36, 255);
 }
 
-.btn_connexion a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
 /* Main */
 section {
     width: clamp(630px, 100vw, 630px);
     margin: auto;
     padding: 1rem 2rem;
+}
+
+.connexion_section {
+    padding: 20px;
+    max-width: 300px;
+}
+
+.connexion_section h2 {
+    text-align: center;
 }
 
 /* Footer */
