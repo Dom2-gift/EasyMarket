@@ -6,6 +6,7 @@
         <title>EasyMarket</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/creation_du_compte.css">
+        <link rel="stylesheet" href="css/form.css">
     </head>
 
     <body>
@@ -42,14 +43,18 @@
         </header>
 
         <main class="main">
-            <section class="creation_du_compte_section">
+            <section class="section section_form creation_du_compte_section">
                 <h3>Créer un compte</h3>
-                <form method="post" action="" class="creation_du_compte_form">
+                <form method="post" action="" class="form">
                     <input type="text" name="nom" id="nom" placeholder="Nom" required>
                     <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
                     <input type="tel/email" name="tel_email" id="tel_email" placeholder="Numéro mobile ou Email" required>
                     <input type="password" name="password" id="password" placeholder="Mot de passe" required>
-                    <button type="submit" class="btn_creation_compte_submit">Créer un compte</button>
+                    
+                    <!-- Ajouter le lien pour vérifier le numéro de téléphone ou l'email -->
+                    <button type="submit" class="btn_submit btn_creation_compte_submit">
+                        Créer un compte
+                    </button>
                     
                     <a href="connexion.html" class="deja_inscrit">Déjà inscrit ? Connectez-vous</a>
                 </form>

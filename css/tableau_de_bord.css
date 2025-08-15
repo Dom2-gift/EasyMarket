@@ -1,8 +1,7 @@
 /* Tableau de bord CSS */
 .suivi_reservation,
 .suivi_commission {
-    position: relative;
-    bottom: 1.5rem;
+
 }
 
 table {
@@ -12,17 +11,19 @@ table {
     table-layout: fixed; /* colonnes largeur égale */
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-    width: 1%; /* force la largeur égale avec table-layout: fixed */
-    word-break: break-word;
-}
-
 caption {
-    font-sise: 2em;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
     margin-bottom: 20px;
     text-align: center;
+}
+
+th, td {
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 1%; /* force la largeur égale avec table-layout: fixed */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    word-break: break-word;
 }

@@ -6,6 +6,7 @@
         <title>EasyMarket</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reservation.css">
+        <link rel="stylesheet" href="css/form.css">
     </head>
 
     <body>
@@ -42,36 +43,32 @@
         </header>
 
         <main>
-            <section class="titre">
+            <section class="section section_form">
                 <h2>Réservation</h2>
-            </section>
+                <form method="get" action="" class="form reservation">
+                    <label>Mon identité</label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom complet" required>
+                    <input type="tel" name="num_tel" id="num_tel" placeholder="Numéro de téléphone" required>
 
-            <section class="reservation">
-                <form method="get" action="">
-                    <fieldset class="mon_identite">
-                        <legend>Mon identité</legend>
-                        <input type="text" name="nom" id="nom" placeholder="Nom complet" required>
-                        <input type="tel" name="num_tel" id="num_tel" placeholder="Numéro de téléphone" required>
-                    </fieldset>
-                    <fieldset class="mes_reservations">
-                        <legend>Mes réservations</legend>
+                    <div class="mes_reservations">
+                        <label>Mes réservations</label>
                         <img src="images/ajouter.png" alt="Icone de ajouter un produit" class="ajouter_produit" id="ajouter_produit">
-                        <div id="produit-container">
-                            <div class="produit-group">
-                                <input type="text" name="produit[]" placeholder="Produit">
-                                <input type="text" name="quantite[]" placeholder="Quantité">
-                            </div>
+                    </div>
+
+                    <div id="produit-container">
+                        <div class="produit-group">
+                            <input type="text" name="produit[]" placeholder="Produit" required>
+                            <input type="text" name="quantite[]" placeholder="Quantité" required>
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Boutique</legend>
-                        <select name="boutique" id="boutique">
-                            <option value="boutique_une" selected>Boutique Une</option>
-                            <option value="boutique_deux">Boutique Deux</option>
-                            <option value="boutique_n">Boutique Trois</option>
-                        </select>
-                    </fieldset>
-                    <input type="submit" value="Envoyer" class="btn_submit">
+                    </div>
+
+                    <label>Boutique</label>
+                    <select name="boutique" id="boutique">
+                        <option value="boutique_une" selected>Boutique Une</option>
+                        <option value="boutique_deux">Boutique Deux</option>
+                        <option value="boutique_n">Boutique Trois</option>
+                    </select>
+                    <input type="submit" value="Envoyer" class="btn_submit btn_reservation_submit">
                 </form> 
             </section>
         </main>   
