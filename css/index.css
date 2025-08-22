@@ -1,6 +1,6 @@
 /* Main */
 .presentation {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -9,4 +9,54 @@
 
 .info {
     line-height: 1.5;
+}
+
+.products_section {
+    margin-bottom: 1.5rem;
+    border-top: 1px solid var(--accent-color);
+}
+
+.boutique_products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boutique,
+.products {
+    text-align: center;
+    padding: 0 1rem;
+    border: 1px solid black;
+}
+
+.boutique {
+    width: 200px;
+}
+
+.boutique_description,
+.products_list {
+    line-height: 1.1;
+}
+
+.boutique_description {
+    
+}
+
+.products {
+    width: 350px;
+}
+
+.products_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products_list p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    border: 1px solid black;
 }

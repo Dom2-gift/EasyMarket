@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EasyMarket</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/changer_mot_de_passe.css">
         <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/changer_mot_de_passe.css">
     </head>
 
     <body>
@@ -43,15 +43,16 @@
         </header>
 
         <main class="main">
-            <section class="mot_de_passe_oublie_section">
+            <section class="section section_form changer_mot_de_passe_section">
                 <h3>Réinitialisation du mot de passe</h3>
-                <form method="post" action="" class="mot_de_passe_oublie_form">
+                <form method="post" action="" class="form">
+                    <input type="number" name="code_verification" id="code_verification" placeholder="Code de vérification" required>
                     <input type="text" name="nouveau_mot_de_passe" id="nouveau_mot_de_passe" placeholder="Nouveau mot de passe" required>
                     <input type="text" name="confirmer_mot_de_passe" id="confirmer_mot_de_passe" placeholder="Confirmer le mot de passe" required>
-                    <button type="submit" class="btn_envoyer">
-                        <a href="connexion.html">Envoyer</a>
-                    </button>
+                    <button type="submit" class="btn_submit btn_changer_mot_de_passe_submit">Envoyer</button>                    
                 </form>
+
+                <a href="connexion.html" class="page_suivante">Terminer</a>                
             </section>
         </main>
 

@@ -5,7 +5,7 @@ document.getElementById('ajouter_produit').addEventListener('click', function() 
     group.className = 'produit-group';
     group.innerHTML = `
         <input type="text" name="produit[]" placeholder="Produit">
-        <input type="text" name="quantite[]" placeholder="Quantité">
+        <input type="text" name="quantite[]" placeholder="Quantité / Prix">
     `;
     container.appendChild(group);
 });

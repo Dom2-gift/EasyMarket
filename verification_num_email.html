@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EasyMarket</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/reservation.css">
         <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/verification_num_email.css">
     </head>
 
     <body>
@@ -42,42 +42,23 @@
             </nav>
         </header>
 
-        <main>
-            <section class="section section_form">
-                <h2>Réservation</h2>
-                <form method="get" action="" class="form reservation">
-                    <label>Mon identité</label>
-                    <input type="text" name="nom" id="nom" placeholder="Nom complet" required>
-                    <input type="tel" name="num_tel" id="num_tel" placeholder="Numéro de téléphone" required>
+        <main class="main">
+            <section class="section section_form mot_de_passe_oublie_section">
+                <h3>Code de vérification</h3>
+                <form method="post" action="" class="form">
+                    <input type="number" name="code_verification" id="code_verification" placeholder="Code de vérification" required>
+                    <button type="submit" class="btn_submit btn_changer_mot_de_passe_submit">Envoyer</button>
+                </form>
 
-                    <div class="mes_reservations">
-                        <label>Mes réservations</label>
-                        <img src="images/ajouter.png" alt="Icone de ajouter un produit" class="ajouter_produit" id="ajouter_produit">
-                    </div>
-
-                    <div id="produit-container">
-                        <div class="produit-group">
-                            <input type="text" name="produit[]" placeholder="Produit" required>
-                            <input type="text" name="quantite[]" placeholder="Quantité / Prix" required>
-                        </div>
-                    </div>
-
-                    <label>Boutique</label>
-                    <select name="boutique" id="boutique">
-                        <option value="boutique_une" selected>Boutique Une</option>
-                        <option value="boutique_deux">Boutique Deux</option>
-                        <option value="boutique_n">Boutique Trois</option>
-                    </select>
-                    <input type="submit" value="Envoyer" class="btn_submit btn_reservation_submit">
-                </form> 
+                <a href="index.html" class="page_suivante">Terminé</a>                
             </section>
-        </main>   
+        </main>
 
         <footer class="footer">
             <p>&copy; 2023 EasyMarket. All rights reserved.</p>
         </footer>
         
         <script src="js/script.js"></script>
-        <script src="js/reservation.js"></script>
+        <script src="js/verification_num_email.js"></script>
     </body>
-</html>
+</html> 
